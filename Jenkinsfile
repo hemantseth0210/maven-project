@@ -4,6 +4,7 @@ pipeline {
     tools {
         maven 'localMaven'
         jdk 'localJDK'
+        winscp 'localWinScp'
     }
 
     parameters { 
