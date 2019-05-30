@@ -16,6 +16,11 @@ pipeline {
                 }
             }
         }
+        stage ('Running Tests'){
+            steps {
+                build job: 'static-analysis'
+            }
+        }
         stage ('Deploy to Staging'){
             steps {
                 build job: 'deploy-to-stage'
